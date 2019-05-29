@@ -14,7 +14,7 @@ public class AirHockeyActivity extends AppCompatActivity {
 		super.onCreate(savedInstanceState);
 		mGLSurfaceView = new GLSurfaceView(this);
 		mGLSurfaceView.setEGLContextClientVersion(2);
-		mGLSurfaceView.setRenderer(new AirHockeyRenderer());
+		mGLSurfaceView.setRenderer(new AirHockeyRenderer(this));
 		rendererSet = true;
 		setContentView(mGLSurfaceView);
 	}
